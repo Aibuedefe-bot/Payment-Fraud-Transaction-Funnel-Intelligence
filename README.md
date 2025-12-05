@@ -351,32 +351,8 @@ if st.button('Run fraud detection (local)'):
 
 ---
 
-## 13 — README (short) — place in repo root
-
-```md
-# Payment Fraud & Transaction Funnel Intelligence
-
-## What
-End-to-end fintech analytics project demonstrating data architecture, ETL, ML, and dashboards for payment funnel and fraud detection.
-
-## Quickstart (local)
-1. Create virtualenv: `python -m venv .venv && source .venv/bin/activate`
-2. Install deps: `pip install -r requirements.txt`
-3. Generate data: `python data/synthetic_generator.py`
-4. Run ETL: `python etl/etl_job.py`
-5. Train model: `python models/train_fraud.py`
-6. Run dashboard: `streamlit run dashboard/app.py`
-7. Serve API: `uvicorn serving.fastapi_app:app --reload`
-
-## What to include in your interview demo
-- Architecture diagram
-- Metrics dashboard (Streamlit)
-- Notebook showing model evaluation
-- Short presentation (5 slides)
-```
 
 ---
-
 ## 14 — Pitch slides (slides/pitch_deck.md)
 
 ```md
@@ -403,29 +379,3 @@ Productionize (SageMaker, Redshift), integrate to internal systems, add A/B test
 
 ---
 
-## 15 — Interview talking points (copy-ready)
-
-1. "I built an end-to-end pipeline ingesting payment logs, enforcing schema, storing parquet data in S3 and running analytics in Redshift/Athena."
-2. "I implemented supervised and unsupervised models to detect fraud and anomalous spikes, and created alerting for ops teams."
-3. "I exposed a prediction API (FastAPI) and a Streamlit dashboard for stakeholders."
-4. "I emphasized data quality, schema enforcement, metadata, and instrumentation so decision-makers can trust the data."
-5. "I produced actionable product recommendations based on funnel drop-off analysis that improved conversion in simulations."
-
----
-
-## 16 — 5-sentence CV project summary (copy-ready)
-
-> Built an end-to-end Payment Fraud & Transaction Funnel Intelligence platform using Python, AWS (S3, Glue, Athena), and ML models to detect fraudulent transactions and identify payment funnel bottlenecks. Engineered data pipelines and a Parquet-based warehouse, implemented anomaly detection and a Random Forest fraud classifier (deployed via FastAPI), and produced a Streamlit dashboard for stakeholders. Designed instrumentation, alerting, and metadata management to ensure data quality and observability. Provided actionable product recommendations that reduce failure points and increase conversion rates. Project demonstrates applied fintech analytics, data architecture, and production ML skills relevant to Interswitch.
-
----
-
-## 17 — Next steps I can do for you (choose one)
-
-* Produce the full GitHub repo (zipped) with working scripts and a requirements.txt
-* Implement the Streamlit dashboard with nicer visuals and funnel calculations
-* Create Terraform templates for S3, IAM, and Lambda
-* Convert model training to a SageMaker pipeline
-
----
-
-*End of package.*
